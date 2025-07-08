@@ -8,22 +8,61 @@
     <title>Museum</title>
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="logo">LOUVRE</div>
-            <nav class="nav">
-                <ul>
-                    <li><a href="#visiting">Visiting</a></li>
-                    <li><a href="#explore">Explore</a></li>
-                    <li><a href="#contact">Video</a></li>
-                    <li><a href="#donate">Gallery</a></li>
-                    <li><a href="#tickets">Tickets</a></li>
-                    <li><a href="#contacts">Contacts</a></li>
-                </ul>
-            </nav>
+  <header class="header">
+    <div class="container header__container">
+      <a href="/" class="logo header__logo">
+        <img src="./assets/icons/logo.svg" alt="Louvre logo" class="logo__image">
+        <span class="logo__text">LOUVRE</span>
+      </a>
+      <nav class="nav header__nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="#visiting">Visiting</a></li>
+          <li class="nav__item"><a class="nav__link" href="#explore">Explore</a></li>
+          <li class="nav__item"><a class="nav__link" href="#contact">Video</a></li>
+          <li class="nav__item"><a class="nav__link" href="#donate">Gallery</a></li>
+          <li class="nav__item"><a class="nav__link" href="#tickets">Tickets</a></li>
+          <li class="nav__item"><a class="nav__link" href="#contacts">Contacts</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <section class="welcome">
+      <div class="container welcome__container">
+        <div class="welcome__content">
+          <h1 class="welcome__title">WELCOME<br>TO THE LOUVRE</h1>
+          <p class="welcome__text">From the castle to the museum</p>
+          <button type="button" class="welcome__button">Discover the Louvre</button>
         </div>
-    </header>
-        
-    
+        <div class="welcome__image">
+          <img src="./assets/images/mona_lisa_head.jpg" alt="Mona Lisa painting" />
+          <div class="image-shadow"></div>
+        </div>
+        <div class="slider-pagination">
+          <div class="slider-pagination__counter">01 | 05</div>
+  
+          <div class="slider-pagination__dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+  <div class="slider-pagination__arrows">
+    <button class="arrow left" aria-label="Previous slide">
+      <img src="./assets/icons/arrow_left.svg" alt="Left arrow" />
+    </button>
+    <button class="arrow right" aria-label="Next slide">
+      <img src="./assets/icons/arrow_right.svg" alt="Right arrow" />
+    </button>
+  </div>
+        </div>
+
+        </div>
+    </section>
+
+  </main>
 </body>
+
 </html>
