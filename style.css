@@ -1,6 +1,7 @@
 @font-face {
   font-family: Forum;
   src: url("./assets/fonts/Forum.ttf");
+  font-weight:400;
 }
 @font-face {
   font-family: Roboto;
@@ -109,9 +110,10 @@
 
 .welcome__title {
   font-family: Forum, sans-serif;
+  font-weight: 400;
   font-size: 80px;
   line-height: 90px;
-  letter-spacing: 3px;
+  letter-spacing: 5px;
 }
 
 .welcome__text {
@@ -204,3 +206,75 @@
   display: block;
 }
 
+/* SECTION VIRTUAL TOUR START */
+
+.visiting {
+  padding-top: 75px;
+}
+
+.visiting__title {
+  position: relative;
+  font-family: Forum, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #9D8665;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+}
+
+.visiting__title::after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: #710707;
+}
+
+.card__container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1440px;
+  gap: 60px;
+  row-gap: 74px;
+  padding-top: 103px;
+}
+
+.card__title {
+  position: relative;
+  font-family: Forum, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 32px;
+  letter-spacing: 5px;
+  padding-top: 21px;
+}
+
+.card__title::after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  width: 300px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #710707;
+}
+
+.card__subtitle {
+  font-family: Roboto, sans-serif;
+  font-weight: 100;
+  font-size: 22px;
+  text-transform: capitalize;
+  padding-top: 21px;
+}
+
+.card__text {
+  font-family: Roboto, sans-serif;
+  font-weight: 100;
+  font-size: 18px;
+  text-transform: capitalize;
+  padding-top: 9px;
+}
